@@ -5,7 +5,7 @@ public class Condicional {
 	public static void main(String[] args) {
 		
 		int edad = 18;
-		boolean ine = false;
+		boolean ine = true;
 		
 		if (edad >=18) {
 			System.out.println("Eres mayor de edad");

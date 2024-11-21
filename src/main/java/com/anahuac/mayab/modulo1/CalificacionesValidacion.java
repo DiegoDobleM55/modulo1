@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CalificacionesValidacion {
 
 	public static void main(String[] args) {
-		// Vamos a pedir al usuario las calificaciones para calcular un promedio
+		// Vamos a pedir al usuario las calificaciones para calcular un promedio de los alumnos
 		double sumaCalificaciones = 0;
 		double calificacion = 0;
 		double promedio = 0;
