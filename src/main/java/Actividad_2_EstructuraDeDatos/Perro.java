@@ -81,8 +81,7 @@ public class Perro {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	} 
-	
-	//Métodos / ¿Que hace? 
+	 
 	
 	public void ladrar() {
 		System.out.println("Me llamo... " + this.nombre + " mi dueño es " + this.nombreDuenio + " y estoy ladrando guau guau ");
