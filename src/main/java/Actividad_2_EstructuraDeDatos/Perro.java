@@ -1,8 +1,9 @@
-package com.anahuac.mayab.modulo1.sesion3_2;
+package Actividad_2_EstructuraDeDatos;
 
 public class Perro {  
 	
-	//Variables de instancia o atributos
+	//Atributos
+	
 	private String nombreDuenio;
 	private String nombre;
 	private String raza;
