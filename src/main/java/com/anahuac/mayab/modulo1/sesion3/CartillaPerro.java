@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CartillaPerro {
+	
 	//Atributos
 	private Perro datosPerro;
 	private String idCartilla;
