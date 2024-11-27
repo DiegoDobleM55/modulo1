@@ -1,0 +1,6 @@
+---- Datos Perro -----
+ [raza=beagle, tamanio=chico, peso=12.75, nombre=Luna, nombreDuenio=Diego, edad=1]
+------------
+Vacuna : vacuna Quintuple
+Fecha : 16.nov-2024
+------------

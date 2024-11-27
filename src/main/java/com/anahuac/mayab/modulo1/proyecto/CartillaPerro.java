@@ -13,15 +13,14 @@ public class CartillaPerro {
 	HashMap<String, ArrayList<String>> vacunas = new HashMap<>();
 	
 	//constructores
-	public CartillaPerro() {
-		
+	public CartillaPerro() {		
 	}
 	
 	public CartillaPerro(Perro datosPerro, String idCartilla) {
 
 		this.datosPerro = datosPerro;
 		this.idCartilla = idCartilla;
-	}
+	} 
 	
 	//getters y setters
 	public Perro getDatosPerro() {
@@ -57,85 +56,43 @@ public class CartillaPerro {
 			vacunas.put(nombreVacuna, fechas);
 		}
 		
-		
-		
-	} 
+	}
 	
 	public void imprimirCartilla() {
-		  System.out.println("---- Datos Perro -----");
-		  System.out.println(datosPerro.toString());
-		  System.out.println("------------");
-		  for(String vacuna : vacunas.keySet()) {
-		   System.out.println("Vacuna : " + vacuna);
-		   ArrayList<String> fechas = vacunas.get(vacuna);
-		   for(String fecha : fechas) {
-		    System.out.println("Fecha : " + fecha);
-		   }
-		   System.out.println("------------");
-		  }
-		 }
-	public void imprimirExpediente() {
-
+		System.out.println("---- Datos Perro -----");
+		System.out.println(datosPerro.toString());
+		System.out.println("------------");
+		for(String vacuna : vacunas.keySet()) {
+			System.out.println("Vacuna : " + vacuna);
+			ArrayList<String> fechas = vacunas.get(vacuna);
+			for(String fecha : fechas) {
+				System.out.println("Fecha : " + fecha);
+			}
+			System.out.println("------------");
+		}
+	}
+	
+	public void imprimirExpediente() throws IOException {
 		String nombreArchivo = datosPerro.getNombre()+".txt";
 		FileWriter archivo;
-		try {
+		
 			archivo = new FileWriter(nombreArchivo);
 			PrintWriter pw = new PrintWriter(archivo);
 			
-			pw.println("---Datos Perro----\n" );
+			pw.println("---- Datos Perro -----");
 			pw.println(datosPerro.toString());
-			pw.println("\n---------");
-			
+			pw.println("------------");
 			for(String vacuna : vacunas.keySet()) {
 				pw.println("Vacuna : " + vacuna);
 				ArrayList<String> fechas = vacunas.get(vacuna);
-				
 				for(String fecha : fechas) {
-					pw.println("fecha : " + fecha);
-					
+					pw.println("Fecha : " + fecha );
 				}
-				
-				pw.println("________");
-			}
-			pw.close();
-			
-        } catch (IOException e) {
-        	System.out.println("Hubo un problema al intentar crear el archivo" + nombreArchivo);
-            e.printStackTrace();
-        }
-	}
-	
-	public void imprimirExpedienteFalla() {
-
-		String nombreArchivo = "C:\\XYZ\\" + datosPerro.getNombre()+".txt";
-		FileWriter archivo;
-		try {
-			archivo = new FileWriter(nombreArchivo);
-			PrintWriter pw = new PrintWriter(archivo);
-			
-			pw.print("---Datos Perro----" );
-			pw.print(datosPerro.toString());
-			pw.print("---------");
-			
-			for(String vacuna : vacunas.keySet()) {
-				pw.print("Vacuna : " + vacuna);
-				ArrayList<String> fechas = vacunas.get(vacuna);
-				
-				for(String fecha : fechas) {
-					pw.print("fecha : " + fecha);
-					
+				pw.println("------------"); 
 				}
-				
-				pw.print("________");
-			}
-			pw.close();
 			
-        } catch (IOException e) {
-        	System.out.println("Hubo un problema al intentar crear el archivo" + nombreArchivo);
-            e.printStackTrace();
-        }
-	}
-	
-	
-	
+			pw.close();
+		}
+			
+			
 }

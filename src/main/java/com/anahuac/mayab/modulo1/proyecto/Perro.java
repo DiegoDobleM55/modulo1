@@ -21,6 +21,8 @@ public class Perro {
 		this.nombre = nombre;
 		this.nombreDuenio = nombreDuenio;
 		this.edad = edad;
+		
+	
 	}
 	
 	public Perro(String raza, String nombre, int edad, String nombreDuenio) {

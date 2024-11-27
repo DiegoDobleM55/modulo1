@@ -18,10 +18,10 @@ public class TestCartilla {
 		cartilla.actualizar(" Quintuple ", "15-julio-2024");
 		
 		cartilla.imprimirCartilla();
-		
+		//Este método imprime el archivo con la cartilla 
 		try {
 			cartilla.imprimirExpediente();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			
 			e.printStackTrace();
 			

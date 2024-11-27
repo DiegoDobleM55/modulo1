@@ -12,14 +12,17 @@ public class ServicioEstetico extends Servicio {
 	}
 	
 	public void cepillar() {
-		System.out.println("Que bien cepillado");
+		System.out.println("En proceso de cepillado");
 	}
 	
 	public void cortarUnias() {
-		System.out.println("ya no tengo uñas");
+		System.out.println("Me hicieron la patacure");
 	}
+	
+	
+	
 	public void realizar(String nombre) {
-		System.out.println("atendiendo a : " + nombre);
+		System.out.println("Atendiendo a : " + nombre);
 
 		baniar();
 		cepillar();
@@ -27,5 +30,6 @@ public class ServicioEstetico extends Servicio {
 		
 		
 	}
+	
 
 }

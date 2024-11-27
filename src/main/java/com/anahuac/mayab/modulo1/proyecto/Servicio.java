@@ -24,6 +24,7 @@ public abstract class Servicio {
 	public CartillaPerro getCartilla() {
 		return cartilla;
 	}
+	
 	public String getTipo() {
 		return tipo;
 	}

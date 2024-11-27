@@ -1,0 +1,6 @@
+---- Datos Perro -----
+ [raza=labrador, tamanio=mediano, peso=22.5, nombre=Black, nombreDuenio=Diego, edad=8]
+------------
+Vacuna : vacuna sextuple
+Fecha : 16.nov-2024
+------------
